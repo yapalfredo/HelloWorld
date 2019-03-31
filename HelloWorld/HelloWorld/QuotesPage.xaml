@@ -4,19 +4,23 @@
              x:Class="HelloWorld.QuotesPage"
              Padding="20,20,20,20">
     <ContentPage.Padding>
-        <OnPlatform x:TypeArguments ="Thickness" 
-                    Android="20,30,20,20"/>
+        <OnPlatform x:TypeArguments ="Thickness"
+                    Android="20,30,20,20"
+                    iOS="20,50,20,20"/>
     </ContentPage.Padding>
+    
     <ContentPage.Content >
         <StackLayout>
-            <Button Text="Next" BackgroundColor="Transparent"/>
-            <Label Text="Font Size "/>
-            <Slider Maximum="50" Minimum="16"/>
-            <Label Text="Welcome to Xamarin.Forms!"
+            <Button Text="Next"  TextColor="Blue" VerticalOptions="Center" Clicked="Button_Clicked"/>
+            <Label BindingContext="{x:Reference sliderFirst}" 
+                   Text="{Binding Value, StringFormat='Value is {0:0}'}"
+                   FontSize="{Binding Value}"
+                   x:Name="labelFirst"/>
+            <Slider Maximum="50" Minimum="16" x:Name="sliderFirst"/>
+            <Label Text="My life is my messagen"
                 VerticalOptions="Center" 
-                HorizontalOptions="CenterAndExpand" />
-
-            
+                HorizontalOptions="CenterAndExpand" 
+                x:Name="labelSecond"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
