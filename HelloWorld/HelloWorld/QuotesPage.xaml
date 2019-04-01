@@ -18,6 +18,7 @@
                    x:Name="labelFirst"/>
             <Slider Maximum="50" Minimum="16" x:Name="sliderFirst"/>
             <Label Text="My life is my messagen"
+                FontSize="{Binding Source={x:Reference sliderFirst},Path=Value}"
                 VerticalOptions="Center" 
                 HorizontalOptions="CenterAndExpand" 
                 x:Name="labelSecond"/>

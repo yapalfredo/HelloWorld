@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,7 +10,7 @@ using Xamarin.Forms.Xaml;
 namespace HelloWorld
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class QuotesPage : ContentPage, INotifyPropertyChanged
+	public partial class QuotesPage : ContentPage
     {
         public string[] myQuotes ={"My life is my messagen", "Stay hungry. Stay foolish",
                                     "Every noble work is at first impossible", "Fall seven times, stand up eigh",

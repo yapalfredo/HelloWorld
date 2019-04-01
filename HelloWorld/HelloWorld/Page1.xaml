@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HelloWorld.Page1">
+    <ContentPage.Resources>
+        <StyleSheet>
+         
+        .home { 
+                width: 309; 
+                height: 89; 
+                opacity: 1;    
+                font-family: MinionPro-CnIt; 
+                font-size: 72; 
+                font-style: normal; 
+                color: #FF000000;
+            }
+            
+        .about { 
+                width: 325; 
+                height: 96; 
+                opacity: 1;    
+                font-family: MinionPro-CnIt; 
+                font-size: 72; 
+                font-style: normal; 
+                color: #FF000000;
+            }
+            
+        .contact { 
+                width: 413; 
+                height: 91; 
+                opacity: 1;    
+                font-family: MinionPro-CnIt; 
+                font-size: 72; 
+                font-style: normal; 
+                color: #FF000000;
+            }
+            
+        .artboard1 { 
+                width: 1080; 
+                height: 1920; 
+                opacity: 1;       
+            }
+
+        </StyleSheet>
+    </ContentPage.Resources>
+    <Frame WidthRequest="1080" HeightRequest="1920">
+        <StackLayout WidthRequest="1080" HeightRequest="1920">
+            <Label Text="Home" FontFamily="MinionPro-CnIt#700" FontSize="72" FontAttributes="Bold" TextColor="#FF000000" />
+            <Label Text="About" FontFamily="MinionPro-CnIt#700" FontSize="72" FontAttributes="Bold" TextColor="#FF000000" />
+            <Label Text="Contact" FontFamily="MinionPro-CnIt#700" FontSize="72" FontAttributes="Bold" TextColor="#FF000000" />
+        </StackLayout>
+    </Frame>
+
+</ContentPage>
+
+
+
+
+
+
